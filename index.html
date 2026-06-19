@@ -1,333 +1,421 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PetCareHub | Simple Pet Care Guides for Everyday Learning</title>
+<title>Japan Fashion Hub</title>
+
+<meta name="description" content="Japan Fashion Hub showcases the latest Japanese fashion, including men's and women's wear and accessories.">
+<meta name="keywords" content="Japanese fashion, men, women, polo shirts, fashion shopping">
+<meta name="author" content="Japan Fashion Hub">
 
 <style>
-
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
 body{
-    font-family:Arial, sans-serif;
-    background:#f6f8ff;
-    color:#222;
-    line-height:1.8;
+font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+background:#fff;
+color:#222;
+line-height:1.6;
 }
 
-/* HEADER */
-header{
-    background:linear-gradient(135deg,#e3f2ff,#f7fbff);
-    padding:90px 20px;
-    text-align:center;
+img{
+width:100%;
+display:block;
 }
 
-header h1{
-    font-size:42px;
-    color:#1e4a72;
-    margin-bottom:20px;
+a{
+text-decoration:none;
+color:inherit;
 }
 
-header p{
-    max-width:850px;
-    margin:auto;
-    margin-bottom:20px;
-    font-size:18px;
-}
-
-.hero-btn{
-    display:inline-block;
-    padding:14px 30px;
-    background:#1e4a72;
-    color:#fff;
-    text-decoration:none;
-    border-radius:8px;
-    font-weight:bold;
-    transition:0.3s;
-}
-
-.hero-btn:hover{
-    background:#163754;
-}
-
-/* CONTAINER */
 .container{
-    width:90%;
-    max-width:1100px;
-    margin:auto;
-    padding:60px 0;
+width:95%;
+max-width:1400px;
+margin:auto;
+}
+
+header{
+background:#082b5c;
+color:#fff;
+padding:15px 0;
+position:sticky;
+top:0;
+z-index:100;
+}
+
+.nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+}
+
+.menu{
+display:flex;
+gap:20px;
+font-size:14px;
+}
+
+.hero{
+padding:20px 0;
+}
+
+.hero-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:15px;
+}
+
+.hero-card{
+position:relative;
+overflow:hidden;
+}
+
+.hero-card img{
+height:500px;
+object-fit:cover;
+}
+
+.hero-text{
+position:absolute;
+bottom:20px;
+left:20px;
+color:#fff;
+font-size:24px;
+font-weight:bold;
+text-shadow:0 2px 10px rgba(0,0,0,.6);
 }
 
 .section-title{
-    text-align:center;
-    font-size:34px;
-    margin-bottom:25px;
-    color:#1e4a72;
+text-align:center;
+font-size:34px;
+margin:50px 0 25px;
+font-weight:700;
 }
 
-/* CARD */
-.card{
-    background:#fff;
-    padding:30px;
-    border-radius:12px;
-    margin-bottom:35px;
-    box-shadow:0 2px 8px rgba(0,0,0,0.08);
+.category-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:20px;
+margin-bottom:60px;
 }
 
-.card h3{
-    margin-bottom:15px;
-    color:#1e4a72;
+.category-card{
+position:relative;
 }
 
-/* CTA */
-.cta{
-    background:#1e4a72;
-    color:#fff;
-    text-align:center;
-    padding:70px 20px;
+.category-card img{
+height:450px;
+object-fit:cover;
 }
 
-.cta h2{
-    font-size:34px;
-    margin-bottom:20px;
+.category-name{
+position:absolute;
+bottom:30px;
+left:30px;
+font-size:48px;
+color:#fff;
+font-weight:bold;
+letter-spacing:4px;
+text-shadow:0 2px 8px rgba(0,0,0,.6);
 }
 
-.cta a{
-    display:inline-block;
-    margin-top:20px;
-    background:#fff;
-    color:#1e4a72;
-    text-decoration:none;
-    padding:14px 30px;
-    border-radius:8px;
-    font-weight:bold;
+.products{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
 }
 
-/* FOOTER */
+.product{
+text-align:center;
+}
+
+.product img{
+height:320px;
+object-fit:cover;
+background:#f7f7f7;
+}
+
+.product h3{
+font-size:14px;
+margin:10px 0;
+}
+
+.price{
+font-weight:bold;
+color:#082b5c;
+}
+
+.story{
+padding:80px 0;
+}
+
+.story-grid{
+display:grid;
+grid-template-columns:1fr 1fr 1fr;
+gap:15px;
+}
+
+.story-grid img{
+height:550px;
+object-fit:cover;
+}
+
+.story-text{
+text-align:center;
+max-width:800px;
+margin:40px auto;
+}
+
+.instagram{
+display:grid;
+grid-template-columns:repeat(6,1fr);
+gap:10px;
+}
+
+.instagram img{
+height:180px;
+object-fit:cover;
+}
+
+.news{
+margin:60px 0;
+}
+
+.news ul{
+list-style:none;
+border:1px solid #ddd;
+}
+
+.news li{
+padding:15px;
+border-bottom:1px solid #eee;
+}
+
 footer{
-    background:#0f2233;
-    color:#fff;
-    text-align:center;
-    padding:30px 20px;
+background:#082b5c;
+color:white;
+padding:50px 20px;
+text-align:center;
+margin-top:50px;
 }
 
-footer a{
-    color:#9ad0ff;
-    text-decoration:none;
+@media(max-width:900px){
+
+.hero-grid,
+.story-grid{
+grid-template-columns:1fr;
 }
 
-/* RESPONSIVE */
-@media(max-width:768px){
-    header h1{font-size:30px;}
-    .section-title{font-size:28px;}
-    .card{padding:22px;}
+.category-grid{
+grid-template-columns:1fr;
 }
 
+.instagram{
+grid-template-columns:repeat(2,1fr);
+}
+
+.hero-card img{
+height:400px;
+}
+
+.category-card img{
+height:350px;
+}
+}
 </style>
+
 </head>
 
 <body>
 
 <header>
-<h1>Simple Pet Care Guides for Everyday Learning</h1>
+<div class="container nav">
+<div class="logo">JAPAN FASHION HUB</div>
 
-<p>
-PetCareHub shares beginner-friendly pet care tips, animal health basics, and everyday guidance for dog and cat owners who want to care for their pets better.
-</p>
+<div class="menu">
+<a href="#">Home</a>
+<a href="#">Men</a>
+<a href="#">Women</a>
+<a href="#">New Arrivals</a>
+<a href="#">Ranking</a>
+</div>
+</div>
 
-<p style="font-weight:bold;">
-All content is free to access with no signup or payment required.
-</p>
-
-<a href="#" class="hero-btn">Explore Guides</a>
 </header>
 
-<section class="container">
+<section class="hero container">
+<div class="hero-grid">
 
-<h2 class="section-title">Independent Educational Website</h2>
+<div class="hero-card">
+<img loading="lazy" src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=900">
+<div class="hero-text">Latest Collection</div>
+</div>
 
-<div class="card">
+<div class="hero-card">
+<img loading="lazy" src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=900">
+<div class="hero-text">Style</div>
+</div>
+
+<div class="hero-card">
+<img loading="lazy" src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=900">
+<div class="hero-text">Accessories</div>
+</div>
+
+</div>
+</section>
+
+<div class="container">
+
+<div class="category-grid">
+
+<div class="category-card">
+<img loading="lazy" src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=1200">
+<div class="category-name">MEN</div>
+</div>
+
+<div class="category-card">
+<img loading="lazy" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=1200">
+<div class="category-name">WOMEN</div>
+</div>
+
+</div>
+
+<h2 class="section-title">New Arrivals</h2>
+
+<div class="products">
+
+<div class="product">
+<img loading="lazy" src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=600">
+<h3>Premium Polo Shirt</h3>
+<div class="price">¥4,980</div>
+</div>
+
+<div class="product">
+<img loading="lazy" src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=600">
+<h3>Summer Shirt</h3>
+<div class="price">¥5,980</div>
+</div>
+
+<div class="product">
+<img loading="lazy" src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=600">
+<h3>Women's Top</h3>
+<div class="price">¥3,980</div>
+</div>
+
+<div class="product">
+<img loading="lazy" src="https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?w=600">
+<h3>Fashion Dress</h3>
+<div class="price">¥6,980</div>
+</div>
+
+</div>
+
+<h2 class="section-title">Popular Ranking</h2>
+
+<div class="products">
+
+<div class="product">
+<img loading="lazy" src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=600">
+<h3>Popular Polo Shirt</h3>
+<div class="price">¥4,500</div>
+</div>
+
+<div class="product">
+<img loading="lazy" src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?w=600">
+<h3>Casual Wear</h3>
+<div class="price">¥5,200</div>
+</div>
+
+<div class="product">
+<img loading="lazy" src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?w=600">
+<h3>Women's Fashion</h3>
+<div class="price">¥4,980</div>
+</div>
+
+<div class="product">
+<img loading="lazy" src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?w=600">
+<h3>Sportswear</h3>
+<div class="price">¥6,200</div>
+</div>
+
+</div>
+
+</div>
+
+<section class="story container">
+
+<div class="story-grid">
+
+<img loading="lazy" src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=900">
+<img loading="lazy" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=900">
+<img loading="lazy" src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=900">
+
+</div>
+
+<div class="story-text">
+<h2 class="section-title">Sport Meets Fashion</h2>
+
 <p>
-PetCareHub is an independently created pet care website focused on simple and practical information about pets, animal behavior, and basic home pet care routines.
+Japan Fashion Hub offers a new lifestyle that combines Japanese trend fashion with sports style.
+We deliver items that focus on quality, comfort, and design.
+</p>
+</div>
+
+</section>
+
+<div class="container">
+
+<h2 class="section-title">Instagram Feed</h2>
+
+<div class="instagram">
+
+<img loading="lazy" src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?w=500">
+<img loading="lazy" src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=500">
+<img loading="lazy" src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?w=500">
+<img loading="lazy" src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=500">
+<img loading="lazy" src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?w=500">
+<img loading="lazy" src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=500">
+
+</div>
+
+<div class="news">
+
+<h2 class="section-title">News</h2>
+
+<ul>
+<li>2026/06/15 Summer Collection Released</li>
+<li>2026/06/12 Men's Ranking Updated</li>
+<li>2026/06/10 Free Shipping Campaign Started</li>
+<li>2026/06/08 New Member Registration Bonus</li>
+</ul>
+
+</div>
+
+</div>
+
+<footer>
+
+<h3>JAPAN FASHION HUB</h3>
+
+<p>
+Delivering the latest fashion across Japan.
 </p>
 
 <p style="margin-top:15px;">
-This website does not provide veterinary services or professional medical treatment.
+© 2026 Japan Fashion Hub. All Rights Reserved.
 </p>
-</div>
 
-</section>
-
-<section class="container">
-
-<h2 class="section-title">Pet Care Learning Guides</h2>
-
-<div class="card">
-<h3>1. Getting Started with Pet Care</h3>
-<p>
-Caring for a pet begins with understanding responsibility, daily routines, and basic needs such as food, water, and shelter.
-</p>
-<p>
-New pet owners should learn about their pet’s breed or species to better understand behavior and care requirements.
-</p>
-<p>
-Regular feeding schedules, clean living spaces, and attention are key parts of early pet care habits.
-</p>
-</div>
-
-<div class="card">
-<h3>2. Understanding Pet Feeding Habits</h3>
-<p>
-Proper nutrition is essential for healthy pets. Dogs and cats require balanced diets based on age, size, and activity level.
-</p>
-<p>
-Overfeeding can lead to obesity, while underfeeding may cause weakness or health issues.
-</p>
-<p>
-Fresh water should always be available, and feeding routines should remain consistent.
-</p>
-</div>
-
-<div class="card">
-<h3>3. Basic Dog Care Tips</h3>
-<p>
-Dogs need regular exercise, social interaction, and mental stimulation to stay healthy and happy.
-</p>
-<p>
-Daily walks help improve physical health and reduce stress or behavioral problems.
-</p>
-<p>
-Training with positive reinforcement builds trust and good behavior over time.
-</p>
-</div>
-
-<div class="card">
-<h3>4. Basic Cat Care Tips</h3>
-<p>
-Cats are independent but still need attention, clean litter boxes, and proper nutrition.
-</p>
-<p>
-Providing scratching posts and toys helps reduce destructive behavior.
-</p>
-<p>
-Cats enjoy safe, quiet spaces where they can rest comfortably.
-</p>
-</div>
-
-<div class="card">
-<h3>5. Pet Grooming Basics</h3>
-<p>
-Regular grooming keeps pets clean and reduces shedding, skin issues, and discomfort.
-</p>
-<p>
-Brushing fur, trimming nails, and occasional bathing are important parts of pet care.
-</p>
-<p>
-Different breeds require different grooming routines depending on coat type.
-</p>
-</div>
-
-<div class="card">
-<h3>6. Understanding Pet Health & Safety</h3>
-<p>
-Routine checkups help detect health problems early and maintain long-term wellness.
-</p>
-<p>
-Vaccinations and parasite prevention are important for protecting pets from diseases.
-</p>
-<p>
-Pet owners should watch for unusual behavior, appetite changes, or signs of discomfort.
-</p>
-</div>
-
-<div class="card">
-<h3>7. Training & Behavior Tips</h3>
-<p>
-Training helps pets understand rules and build a stronger bond with their owners.
-</p>
-<p>
-Consistency and patience are key to successful training sessions.
-</p>
-<p>
-Reward-based training is more effective than punishment-based methods.
-</p>
-</div>
-
-<div class="card">
-<h3>8. Common Pet Care Mistakes</h3>
-<p>
-Many beginners overlook exercise, proper diet, or regular vet visits.
-</p>
-<p>
-Ignoring behavioral changes can lead to bigger health or training problems later.
-</p>
-<p>
-Learning gradually and observing your pet helps avoid most common mistakes.
-</p>
-</div>
-
-</section>
-
-<section class="cta">
-<h2>Continue Learning About Pet Care</h2>
-<p>
-Explore more simple guides and practical tips to become a better pet owner every day.
-</p>
-<a href="#">Start Learning</a>
-</section>
-
-<section class="container">
-
-<h2 class="section-title">About the Creator</h2>
-
-<div class="card">
-<p>
-Hello, my name is Alex. I created PetCareHub as an independent educational website focused on sharing simple pet care knowledge for beginners.
-</p>
-<p>
-This website is not a veterinary service and does not replace professional advice.
-</p>
-</div>
-
-</section>
-
-<section class="container">
-
-<h2 class="section-title">Contact Information</h2>
-
-<div class="card">
-<p><strong>Owner:</strong> Alex</p>
-<p><strong>Email:</strong> contact@petcarehub.example</p>
-<p><strong>Location:</strong> USA</p>
-</div>
-
-</section>
-
-<section class="container">
-
-<h2 class="section-title">Disclaimer</h2>
-
-<div class="card">
-<p>
-All information is for educational purposes only. PetCareHub does not provide medical or veterinary advice.
-</p>
-<p>
-Pet owners should consult a qualified veterinarian for health-related concerns.
-</p>
-</div>
-
-</section>
-
-<footer>
-<p>© 2026 PetCareHub | All Rights Reserved</p>
-<p style="margin-top:10px;">
-<a href="#">Privacy Policy</a> | <a href="#">Contact</a>
-</p>
 </footer>
 
 </body>
